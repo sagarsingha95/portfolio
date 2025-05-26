@@ -40,6 +40,11 @@ function openMenu() {
         ease: "back.out(1.7)",
         delay: 1 // show after menu starts sliding in
     });
+    gsap.fromTo("#close", 
+    { scale: 0.5, opacity: 0 },
+    { scale: 1, opacity: 1, duration: 0.5, ease: "back.out(1.7)", delay: 1 }
+);
+
 
 }
 
